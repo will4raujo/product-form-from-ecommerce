@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Product Web Form</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Exemplo de Cadastro de produtos para uma API E-commerce</h1>
+            <p>Preencha os dados abaixo</p>
+        </header>
+        <main>
+            <form id="product-form">
+                <fieldset>
+                    <div class="fieldset-wrapper">
+                        <legend>Informações do produto</legend>
+                        <div class="input-wrapper">
+                            <label for="name">Título do produto <span>(mínimo 8 caracteres)</span></label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="shortName">Título curto</label>
+                                <input type="text" name="shortName" id="shortName" />
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="sku">SKU<span>(Unidade de manutenção de estoque)</span></label>
+                                <input type="text" name="sku" id="sku" />
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" required></textarea>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="status">Status</label>
+                                <select name="status" id="status" aria-placeholder="Status do produto">
+                                    <option value="enabled">Ativo</option>
+                                    <option value="disabled">Inativo</option>
+                                </select>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="wordKeys">Palavras chave</label>
+                                <input type="text" name="wordKeys" id="wordKeys" />
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="input-wrapper">
+                                <label for="price">Preço de venda</label>
+                                <input type="number" name="price" id="price" required />
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="promotional_price">Preço promocional</label>
+                                <input type="number" name="promotional_price" id="promotional_price" required />
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="cost">Preço de custo</label>
+                                <input type="number" name="cost" id="cost" required />
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="input-wrapper">
+                                <label for="height">Altura<span>(em centímetros)</span></label>
+                                <input type="number" name="height" id="height" required />
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="width">Largura<span>(em centímetros)</span></label>
+                                <input type="number" name="width" id="width" required />
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="length">Comprimento<span>(em centímetros)</span></label>
+                                <input type="number" name="length" id="length" required />
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="weight">Peso<span>(Peso bruto em kg)</span></label>
+                                <input type="number" name="weight" id="weight" required />
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="brand">Marca</label>
+                                <input type="text" name="brand" id="brand" required />
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="nbm">NCM<span>(Código fiscal do produto)</span></label>
+                            <input type="text" name="nbm" id="nbm" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="model">Modelo do produto</label>
+                            <input type="text" name="model" id="model" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="gender">Gênero</label>
+                            <input type="text" name="gender" id="gender" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="volumes">Volumes<span>(Quantidade de volumes que compõem o
+                                    produto)</span></label>
+                            <input type="number" name="volumes" id="volumes" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="warrantyTime">Tempo de garantia<span>(Tempo de garantia em meses)</span></label>
+                            <input type="number" name="warrantyTime" id="warrantyTime" />
+                        </div>
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="category">Categoria</label>
+                                <input type="text" name="category" id="category" />
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="subcategory">Subcategoria</label>
+                                <input type="text" name="subcategory" id="subcategory" />
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="endcategory">Categoria final</label>
+                                <input type="text" name="endcategory" id="endcategory" />
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="urlYoutube">URL do vídeo do Youtube</label>
+                            <input type="url" name="urlYoutube" id="urlYoutube" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="googleDescription">Descrição para o Google</label>
+                            <input type="text" name="googleDescription" id="googleDescription" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="manufacturing">Fabricação</label>
+                            <select name="manufacturing" id="manufacturing" aria-placeholder="Fabricação do produto">
+                                <option value="nacional">Nacional</option>
+                                <option value="importado">Importado</option>
+                            </select>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="attribute-name">Nome do Atributo</label>
+                            <input type="text" name="attribute-name" id="attribute-name" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="attribute-value">Valor do Atributo</label>
+                            <input type="text" name="attribute-value" id="attribute-value" />
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="fieldset-wrapper">
+                        <legend>Variações</legend>
+
+                        <div class="input-wrapper">
+                            <label for="ref">Referência</label>
+                            <input type="text" name="ref" id="ref" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="sku-variation">SKU</label>
+                            <input type="text" name="sku-variation" id="sku-variation" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="qty">Quantidade</label>
+                            <input type="number" name="qty" id="qty" />
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="ean">EAN</label>
+                            <input type="text" name="ean" id="ean" />
+                        </div>
+                        <div class="image-container" id="image-container">
+                            <div class="input-wrapper">
+                                <label for="image">Imagens</label>
+                                <input type="url" name="image" id="image-0" />
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <button class="add-button" onclick="addNewImage()" type="button">
+                                &#43;
+                            </button>
+                            <button class="remove-button" onclick="removeLastImage()" type="button">
+                                &#8722;
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="fieldset-wrapper">
+                        <legend>Especificações</legend>
+                        <div id="specifications-container">
+                            <div class="col-2">
+                                <div class="input-wrapper">
+                                    <label for="specification-key">Chave da especificação</label>
+                                    <input type="text" name="specification-key" id="specification-key" />
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="specification-value">Valor da especificação</label>
+                                    <input type="text" name="specification-value" id="specification-value" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+
+                            <button class="add-button" onclick="addNewSpecification()" type="button">
+                                &#43;
+                            </button>
+                            <button class="remove-button" onclick="removeLastSpecification()" type="button">
+                                &#8722;
+                            </button>
+                        </div>
+
+                </fieldset>
+            </form>
+            <footer>
+                <input form="product-form" class="button" type="submit" value="Salvar produto" />
+            </footer>
+        </main>
+    </div>
+</body>
+<script>
+    const form = document.getElementById("product-form");
+    let imageCounter = 1;
+
+    const addNewImage = () => {
+        const imageContainer = document.getElementById("image-container");
+        const newImage = document.createElement("div");
+        newImage.classList.add("input-wrapper");
+        newImage.innerHTML = `
+                <label for="image"></label>
+                <input type="url" name="image" id="image-${imageCounter}" />
+            `;
+        imageCounter++;
+        imageContainer.appendChild(newImage);
+    };
+
+    const removeLastImage = () => {
+        const imageContainer = document.getElementById("image-container");
+        if (imageContainer.children.length > 1) {
+            imageContainer.removeChild(imageContainer.lastElementChild);
+        }
+    };
+
+    const addNewSpecification = () => {
+        const specificationsContainer = document.getElementById("specifications-container");
+        const newSpecification = document.createElement("div");
+        newSpecification.classList.add("col-2");
+        newSpecification.innerHTML = `
+                <div class="input-wrapper">
+                    <label for="specification-key"></label>
+                    <input type="text" name="specification-key" id="specification-key-${specificationsContainer.childElementCount / 2}" />
+                </div>
+                <div class="input-wrapper">
+                    <label for="specification-value"></label>
+                    <input type="text" name="specification-value" id="specification-value-${specificationsContainer.childElementCount / 2}" />
+                </div>
+            `;
+        specificationsContainer.appendChild(newSpecification);
+    };
+
+    const removeLastSpecification = () => {
+        const specificationsContainer = document.getElementById("specifications-container");
+        if (specificationsContainer.children.length > 1) {
+            specificationsContainer.removeChild(specificationsContainer.lastElementChild);
+        }
+    };
+
+    document.getElementById("product-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const imagesArray = Array.from(document.querySelectorAll("#image-container input")).map(input => input.value);
+        const specificationsArray = Array.from(document.querySelectorAll("#specifications-container .col-2")).map(wrapper => {
+            return {
+                key: wrapper.querySelector("input[name='specification-key']").value,
+                value: wrapper.querySelector("input[name='specification-value']").value
+            };
+        });
+
+        const formData = {
+            sku: document.getElementById("sku").value,
+            name: document.getElementById("name").value,
+            description: document.getElementById("description").value,
+            shortName: document.getElementById("shortName").value,
+            status: document.getElementById("status").value,
+            wordKeys: document.getElementById("wordKeys").value,
+            price: document.getElementById("price").value,
+            promotional_price: document.getElementById("promotional_price").value,
+            cost: document.getElementById("cost").value,
+            weight: document.getElementById("weight").value,
+            width: document.getElementById("width").value,
+            height: document.getElementById("height").value,
+            length: document.getElementById("length").value,
+            brand: document.getElementById("brand").value,
+            urlYoutube: document.getElementById("urlYoutube").value,
+            googleDescription: document.getElementById("googleDescription").value,
+            manufacturing: document.getElementById("manufacturing").value,
+            nbm: document.getElementById("nbm").value,
+            model: document.getElementById("model").value,
+            gender: document.getElementById("gender").value,
+            volumes: document.getElementById("volumes").value,
+            warrantyTime: document.getElementById("warrantyTime").value,
+            category: document.getElementById("category").value,
+            subcategory: document.getElementById("subcategory").value,
+            endcategory: document.getElementById("endcategory").value,
+            attribute: [
+                {
+                    key: document.getElementById("attribute-name").value,
+                    value: document.getElementById("attribute-value").value,
+                },
+            ],
+            variations: [
+                {
+                    ref: document.getElementById("ref").value,
+                    sku: document.getElementById("sku-variation").value,
+                    qty: document.getElementById("qty").value,
+                    ean: document.getElementById("ean").value,
+                    images: imagesArray,
+                    specifications: specificationsArray,
+                },
+            ],
+        };
+
+        fetch('https://www.replicade.com.br/api/v3/products', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+            .then(response => response.json())
+            .then(data => {
+                const responseMessage = document.getElementById('response-message');
+                if (data.error) {
+                    responseMessage.textContent = 'Erro: ' + data.error;
+                    responseMessage.style.color = 'red';
+                } else {
+                    responseMessage.textContent = 'Produto cadastrado com sucesso!';
+                    responseMessage.style.color = 'green';
+                }
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                const responseMessage = document.getElementById('response-message');
+                responseMessage.textContent = 'Erro: ' + error.message;
+                responseMessage.style.color = 'red';
+            });
+
+    });
+</script>
+
+</html>
